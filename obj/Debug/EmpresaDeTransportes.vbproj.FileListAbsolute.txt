@@ -1,0 +1,13 @@
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\bin\Debug\EmpresaDeTransportes.exe.config
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\bin\Debug\EmpresaDeTransportes.exe
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\bin\Debug\EmpresaDeTransportes.pdb
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\bin\Debug\EmpresaDeTransportes.xml
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.vbproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Resources.resources
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.vbproj.GenerateResource.cache
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.vbproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.exe
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.xml
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.pdb
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Login.resources
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Registro.resources
