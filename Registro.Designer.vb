@@ -22,6 +22,7 @@ Partial Class Registro
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Registro))
         Me.PanelRegistro = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -33,17 +34,20 @@ Partial Class Registro
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.DomainUpDown1 = New System.Windows.Forms.DomainUpDown()
+        Me.txtUsuario = New System.Windows.Forms.TextBox()
+        Me.txtDni = New System.Windows.Forms.TextBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.txtCelular = New System.Windows.Forms.TextBox()
+        Me.txtContraseña = New System.Windows.Forms.TextBox()
+        Me.txtConfirmarContra = New System.Windows.Forms.TextBox()
+        Me.btnAtras = New System.Windows.Forms.Button()
+        Me.btnRegistro = New System.Windows.Forms.Button()
+        Me.varTipoUsuario = New System.Windows.Forms.DomainUpDown()
+        Me.imgRegistro = New System.Windows.Forms.PictureBox()
         Me.PanelRegistro.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.imgRegistro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelRegistro
@@ -59,15 +63,15 @@ Partial Class Registro
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.DomainUpDown1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.varTipoUsuario)
+        Me.Panel1.Controls.Add(Me.btnRegistro)
+        Me.Panel1.Controls.Add(Me.btnAtras)
+        Me.Panel1.Controls.Add(Me.txtConfirmarContra)
+        Me.Panel1.Controls.Add(Me.txtContraseña)
+        Me.Panel1.Controls.Add(Me.txtCelular)
+        Me.Panel1.Controls.Add(Me.txtCorreo)
+        Me.Panel1.Controls.Add(Me.txtDni)
+        Me.Panel1.Controls.Add(Me.txtUsuario)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -83,6 +87,7 @@ Partial Class Registro
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.imgRegistro)
         Me.Panel2.Location = New System.Drawing.Point(409, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(391, 450)
@@ -168,77 +173,87 @@ Partial Class Registro
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Tipo de usuario:"
         '
-        'TextBox1
+        'txtUsuario
         '
-        Me.TextBox1.Location = New System.Drawing.Point(186, 84)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox1.TabIndex = 8
+        Me.txtUsuario.Location = New System.Drawing.Point(186, 84)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(190, 20)
+        Me.txtUsuario.TabIndex = 8
         '
-        'TextBox2
+        'txtDni
         '
-        Me.TextBox2.Location = New System.Drawing.Point(186, 119)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox2.TabIndex = 9
+        Me.txtDni.Location = New System.Drawing.Point(186, 119)
+        Me.txtDni.Name = "txtDni"
+        Me.txtDni.Size = New System.Drawing.Size(190, 20)
+        Me.txtDni.TabIndex = 9
         '
-        'TextBox3
+        'txtCorreo
         '
-        Me.TextBox3.Location = New System.Drawing.Point(186, 158)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.txtCorreo.Location = New System.Drawing.Point(186, 158)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(190, 20)
+        Me.txtCorreo.TabIndex = 10
         '
-        'TextBox4
+        'txtCelular
         '
-        Me.TextBox4.Location = New System.Drawing.Point(186, 201)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox4.TabIndex = 11
+        Me.txtCelular.Location = New System.Drawing.Point(186, 201)
+        Me.txtCelular.Name = "txtCelular"
+        Me.txtCelular.Size = New System.Drawing.Size(190, 20)
+        Me.txtCelular.TabIndex = 11
         '
-        'TextBox5
+        'txtContraseña
         '
-        Me.TextBox5.Location = New System.Drawing.Point(186, 238)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox5.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox5.TabIndex = 12
+        Me.txtContraseña.Location = New System.Drawing.Point(186, 238)
+        Me.txtContraseña.Name = "txtContraseña"
+        Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtContraseña.Size = New System.Drawing.Size(190, 20)
+        Me.txtContraseña.TabIndex = 12
         '
-        'TextBox6
+        'txtConfirmarContra
         '
-        Me.TextBox6.Location = New System.Drawing.Point(186, 280)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox6.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox6.TabIndex = 13
+        Me.txtConfirmarContra.Location = New System.Drawing.Point(186, 280)
+        Me.txtConfirmarContra.Name = "txtConfirmarContra"
+        Me.txtConfirmarContra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtConfirmarContra.Size = New System.Drawing.Size(190, 20)
+        Me.txtConfirmarContra.TabIndex = 13
         '
-        'Button1
+        'btnAtras
         '
-        Me.Button1.Font = New System.Drawing.Font("Calibri", 14.25!)
-        Me.Button1.Location = New System.Drawing.Point(84, 375)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(88, 40)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Atrás"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAtras.Font = New System.Drawing.Font("Calibri", 14.25!)
+        Me.btnAtras.Location = New System.Drawing.Point(84, 375)
+        Me.btnAtras.Name = "btnAtras"
+        Me.btnAtras.Size = New System.Drawing.Size(88, 40)
+        Me.btnAtras.TabIndex = 15
+        Me.btnAtras.Text = "Atrás"
+        Me.btnAtras.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnRegistro
         '
-        Me.Button2.Font = New System.Drawing.Font("Calibri", 14.25!)
-        Me.Button2.Location = New System.Drawing.Point(239, 375)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(109, 40)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Registrarse"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRegistro.Font = New System.Drawing.Font("Calibri", 14.25!)
+        Me.btnRegistro.Location = New System.Drawing.Point(239, 375)
+        Me.btnRegistro.Name = "btnRegistro"
+        Me.btnRegistro.Size = New System.Drawing.Size(109, 40)
+        Me.btnRegistro.TabIndex = 16
+        Me.btnRegistro.Text = "Registrarse"
+        Me.btnRegistro.UseVisualStyleBackColor = True
         '
-        'DomainUpDown1
+        'varTipoUsuario
         '
-        Me.DomainUpDown1.Location = New System.Drawing.Point(186, 315)
-        Me.DomainUpDown1.Name = "DomainUpDown1"
-        Me.DomainUpDown1.Size = New System.Drawing.Size(190, 20)
-        Me.DomainUpDown1.TabIndex = 17
-        Me.DomainUpDown1.Text = "DomainUpDown1"
+        Me.varTipoUsuario.Location = New System.Drawing.Point(186, 315)
+        Me.varTipoUsuario.Name = "varTipoUsuario"
+        Me.varTipoUsuario.Size = New System.Drawing.Size(190, 20)
+        Me.varTipoUsuario.TabIndex = 17
+        Me.varTipoUsuario.Text = "DomainUpDown1"
+        '
+        'imgRegistro
+        '
+        Me.imgRegistro.Image = CType(resources.GetObject("imgRegistro.Image"), System.Drawing.Image)
+        Me.imgRegistro.Location = New System.Drawing.Point(48, 57)
+        Me.imgRegistro.Name = "imgRegistro"
+        Me.imgRegistro.Size = New System.Drawing.Size(307, 331)
+        Me.imgRegistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imgRegistro.TabIndex = 0
+        Me.imgRegistro.TabStop = False
         '
         'Registro
         '
@@ -252,6 +267,8 @@ Partial Class Registro
         Me.PanelRegistro.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.imgRegistro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -267,13 +284,14 @@ Partial Class Registro
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DomainUpDown1 As DomainUpDown
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtConfirmarContra As TextBox
+    Friend WithEvents txtContraseña As TextBox
+    Friend WithEvents txtCelular As TextBox
+    Friend WithEvents txtCorreo As TextBox
+    Friend WithEvents txtDni As TextBox
+    Friend WithEvents txtUsuario As TextBox
+    Friend WithEvents btnAtras As Button
+    Friend WithEvents varTipoUsuario As DomainUpDown
+    Friend WithEvents btnRegistro As Button
+    Friend WithEvents imgRegistro As PictureBox
 End Class

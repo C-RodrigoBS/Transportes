@@ -41,12 +41,16 @@
 
     End Sub
 
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles txtContraseña.TextChanged
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAtras.Click
         Login.Show()
         Hide()
+    End Sub
+
+    Private Sub imgRegistro_Click(sender As Object, e As EventArgs) Handles imgRegistro.Click
+
     End Sub
 End Class

@@ -11,3 +11,4 @@ C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\E
 C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.pdb
 C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Login.resources
 C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Registro.resources
+C:\Users\Asus\source\repos\EmpresaDeTransportes\EmpresaDeTransportes\obj\Debug\EmpresaDeTransportes.Home.resources

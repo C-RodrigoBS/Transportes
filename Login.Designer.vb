@@ -93,7 +93,7 @@ Partial Class Login
         Me.btnAtras.Name = "btnAtras"
         Me.btnAtras.Size = New System.Drawing.Size(99, 37)
         Me.btnAtras.TabIndex = 6
-        Me.btnAtras.Text = "Atrás"
+        Me.btnAtras.Text = "Cerrar"
         Me.btnAtras.UseVisualStyleBackColor = True
         '
         'btnIniciarSesion
